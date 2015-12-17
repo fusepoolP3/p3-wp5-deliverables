@@ -1,0 +1,23 @@
+# compute overlap of plain text keywords () of a record with its linked GND-id labels
+	define input:inference "gnd-labels"
+
+	prefix skos: <http://www.w3.org/2004/02/skos/core#>  
+	prefix skoso: <http://www.w3.org/2008/05/skos#>  
+	PREFIX isbd: <http://iflastandards.info/ns/isbd/elements/>  
+	PREFIX dc: <http://purl.org/dc/elements/1.1/>  
+	PREFIX fp3: <http://vocab.fusepool.info/fam#> 
+
+	SELECT distinct ?s ?title ?subtitle count(?kw) AS ?kwCount count(SAMETERM(?kw, ?label)) AS ?correctMatch (xsd:float(?correctMatch)/xsd:float(?kwCount)*100 AS ?result)
+	FROM <http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/Platform_StressTest/Corrected-Processing/B3Kat/B3Kat-Subject-GND-linking/1-100.ttl-transformed>
+	FROM <http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/Platform_StressTest/Corrected-Processing/B3Kat/B3Kat-Subject-GND-linking/101-200.ttl-transformed>
+	FROM <http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/Platform_StressTest/Corrected-Processing/B3Kat/B3Kat-Subject-GND-linking/201-250.ttl-transformed>
+		WHERE 
+		{
+   			?s dc:title ?title ;  
+      		   dc:subject ?kw .
+   		OPTIONAL {?s isbd:P1006 ?subtitle .}  
+   		OPTIONAL {?s fp3:entity-reference ?linkedEntity .}        
+   		OPTIONAL { GRAPH <http://d-nb.info-gnd/> { ?linkedEntity skos:prefLabel ?label . } } 
+   		OPTIONAL { GRAPH <http://d-nb.info-gnd/> { ?linkedEntity skoso:prefLabel ?label . } } 
+		}
+		ORDER BY DESC(?s) 

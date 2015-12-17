@@ -1,0 +1,127 @@
+gnd:DifferentiatedPerson
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1600301-1600400.ttl-transformed	http://d-nb.info/gnd/104992824
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1600301-1600400.ttl-transformed	http://d-nb.info/gnd/104992808
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1600901-1601000.ttl-transformed	http://d-nb.info/gnd/104995238
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1601501-1601600.ttl-transformed	http://d-nb.info/gnd/104996773
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1601701-1601800.ttl-transformed	http://d-nb.info/gnd/104996978
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1601901-1602000.ttl-transformed	http://d-nb.info/gnd/1049974263
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1603101-1603200.ttl-transformed	http://d-nb.info/gnd/104999756
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1603401-1603500.ttl-transformed	http://d-nb.info/gnd/105000604
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1603801-1603900.ttl-transformed	http://d-nb.info/gnd/1050011805
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1604901-1605000.ttl-transformed	http://d-nb.info/gnd/1050038487
+=> 8/10 have coocurrence relation
+avg cooc kw	7,75
+Max cooc kw	17
+Min cooc kw	2
+Median	3,5
+
+
+
+gnd:SubjectHeading 
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-7/1161756-1161855.ttl-transformed	http://d-nb.info/gnd/1023816164
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-7/1161856-1161955.ttl-transformed	http://d-nb.info/gnd/1023818582
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-7/1160556-1160655.ttl-transformed	http://d-nb.info/gnd/1023789175
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-7/1160656-1160755.ttl-transformed	http://d-nb.info/gnd/1023791102
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-7/1092556-1092655.ttl-transformed	http://d-nb.info/gnd/1022198610
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/39501-39600.ttl-transformed		http://d-nb.info/gnd/1029852758
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-3/212201-212300.ttl-transformed	http://d-nb.info/gnd/103376342X
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-4/445701-445800.ttl-transformed	http://d-nb.info/gnd/1038487226
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-7/1181656-1181755.ttl-transformed	http://d-nb.info/gnd/1024250636
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-8/1294056-1294155.ttl-transformed	http://d-nb.info/gnd/1026749387
+=> 7/10 have coocurrence relation
+avg cooc kw	93,14 
+Max cooc kw	422
+Min cooc kw	4
+Median	7
+
+
+
+gnd:ConferenceOrEvent
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/176101-176200.ttl-transformed	http://d-nb.info/gnd/10044318-7
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/192901-193000.ttl-transformed	http://d-nb.info/gnd/10054409-5
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/33701-33800.ttl-transformed	http://d-nb.info/gnd/10073449-2
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/39301-39400.ttl-transformed	http://d-nb.info/gnd/10076871-4
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/42401-42500.ttl-transformed	http://d-nb.info/gnd/10078787-3
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/43501-43600.ttl-transformed	http://d-nb.info/gnd/10079582-1
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/46001-46100.ttl-transformed	http://d-nb.info/gnd/10081453-0
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/68601-68700.ttl-transformed	http://d-nb.info/gnd/10097244-5
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/72101-72200.ttl-transformed	http://d-nb.info/gnd/10099500-7
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/78601-78700.ttl-transformed	http://d-nb.info/gnd/10103375-8
+=> 5/10 have coocurrence relation
+avg cooc kw	4,40
+Max cooc kw	7
+Min cooc kw	1
+Median	4
+
+
+
+
+
+gnd:CorporateBody
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1715301-1715400.ttl-transformed	http://d-nb.info/gnd/1052309-1
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1722601-1722700.ttl-transformed	http://d-nb.info/gnd/1052468-X
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1754201-1754300.ttl-transformed	http://d-nb.info/gnd/1053038-1
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1764401-1764500.ttl-transformed	http://d-nb.info/gnd/1053178-6
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1777301-1777400.ttl-transformed	http://d-nb.info/gnd/1053372-2
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1783201-1783300.ttl-transformed	http://d-nb.info/gnd/1053448-9
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/100001-100100.ttl-transformed	http://d-nb.info/gnd/10314083-9
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/100301-100400.ttl-transformed	http://d-nb.info/gnd/10314128-5
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/101001-101100.ttl-transformed	http://d-nb.info/gnd/10314213-7
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/101101-101200.ttl-transformed	http://d-nb.info/gnd/10314269-1
+=> 3/10 have coocurrence relation
+
+avg cooc kw	59,67
+Max cooc kw	88
+Min cooc kw	3
+Median	44
+
+
+gnd:PlaceOrGeographicName
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/20401-20500.ttl-transformed	http://d-nb.info/gnd/1029448175
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/95901-96000.ttl-transformed	http://d-nb.info/gnd/1031313117
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-7/1173456-1173555.ttl-transformed	http://d-nb.info/gnd/1024072878
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1605401-1605500.ttl-transformed	http://d-nb.info/gnd/1050051300
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1605401-1605500.ttl-transformed	http://d-nb.info/gnd/1050051432
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1605501-1605600.ttl-transformed	http://d-nb.info/gnd/1050053303
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1605701-1605800.ttl-transformed	http://d-nb.info/gnd/1050056736
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1606201-1606300.ttl-transformed	http://d-nb.info/gnd/1050072340
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1607901-1608000.ttl-transformed	http://d-nb.info/gnd/1050121899
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1607901-1608000.ttl-transformed	http://d-nb.info/gnd/1050122054
+2/10 have coocurrence relation
+avg cooc kw	19,00
+Max cooc kw	36
+Min cooc kw	2
+Median	19
+
+
+gnd:HistoricSingleEventOrEra
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-3/275401-275500.ttl-transformed	http://d-nb.info/gnd/1034963821
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-3/303101-303200.ttl-transformed	http://d-nb.info/gnd/1035433540
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-3/342801-342900.ttl-transformed	http://d-nb.info/gnd/1036401898
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/34901-35000.ttl-transformed	http://d-nb.info/gnd/1029756066
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/34901-35000.ttl-transformed	http://d-nb.info/gnd/1029756376
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/51001-51100.ttl-transformed	http://d-nb.info/gnd/1030091412
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1752201-1752300.ttl-transformed	http://d-nb.info/gnd/1052971393
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-10/1775901-1776000.ttl-transformed	http://d-nb.info/gnd/1053342837
+y http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/11801-11900.ttl-transformed	http://d-nb.info/gnd/1029263361
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-8/1352656-1352755.ttl-transformed	http://d-nb.info/gnd/102797998X
+=> 3/10 have coocurrence relation
+avg cooc kw	2
+Max cooc kw	2
+Min cooc kw	2
+Median	2
+
+
+gnd:Work
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-4/479901-480000.ttl-transformed	http://d-nb.info/gnd/1041237472	
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-4/480001-480100.ttl-transformed	http://d-nb.info/gnd/1041239130	
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-4/483601-483700.ttl-transformed	http://d-nb.info/gnd/1041316682	
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/52801-52900.ttl-transformed	http://d-nb.info/gnd/1030134847	
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/57801-57900.ttl-transformed	http://d-nb.info/gnd/103023129X	
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/61301-61400.ttl-transformed	http://d-nb.info/gnd/1030302316	
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/27001-27100.ttl-transformed	http://d-nb.info/gnd/1029585350	
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/27001-27100.ttl-transformed	http://d-nb.info/gnd/1029585504	
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-2/27101-27200.ttl-transformed	http://d-nb.info/gnd/1029585849	
+n http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data-8/1209556-1209655.ttl-transformed	http://d-nb.info/gnd/1024868648	
+=> 0/10 have coocurrence relation
+

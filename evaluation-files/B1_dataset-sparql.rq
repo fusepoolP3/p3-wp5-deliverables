@@ -1,0 +1,12 @@
+    
+    # select a random set of German language records from B3Kat that have both plain text keywords (dcterms:subject) and the corresponding links to GND (dc:subject)
+    
+    SELECt distinct ?s 
+    FROM <http://lod.b3kat.de/>
+    WHERE  { 
+ 	 ?s <http://purl.org/dc/terms/language>  <http://id.loc.gov/vocabulary/iso639-2/ger> .
+  	 ?s <http://purl.org/dc/elements/1.1/subject> ?text 
+         ?s <http://purl.org/dc/terms/subject> ?subject
+    }
+    LIMIT 100
+    Offset 1250

@@ -1,0 +1,24 @@
+# find coocurrent GND's for GND http://d-nb.info/gnd/100001718 located in GRAPH <http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/201-300.ttl-transformed> 
+
+	define input:inference "gnd-labels"
+
+	prefix skos: <http://www.w3.org/2004/02/skos/core#>  
+	prefix skoso: <http://www.w3.org/2008/05/skos#> 
+    prefix x: <http://example.org/x/>  
+    
+	SELECT distinct ?linkedEntity ?label ?distance  
+
+	WHERE 
+	{
+   		GRAPH <http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/201-300.ttl-transformed>
+		{
+   			<http://d-nb.info/gnd/100001718>  x:hasCooc ?c .  
+   			?c x:uri ?linkedEntity ;  
+       		   x:closeness ?distance . 
+		}
+    	OPTIONAL { GRAPH <http://d-nb.info-gnd/> {  ?linkedEntity skos:prefLabel ?label . }}  
+    	OPTIONAL { GRAPH <http://d-nb.info-gnd/> {  ?linkedEntity skoso:prefLabel ?label . }}  
+		
+		FILTER regex(?linkedEntity, '/gnd/')
+	}
+	ORDER BY DESC (?distance) 
