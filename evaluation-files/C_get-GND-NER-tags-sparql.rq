@@ -1,0 +1,15 @@
+[Get NER results for GND's](http://ulcs.fusepool.info:8890/sparql/?default-graph-uri=&qtxt=%23%20find%20coocurrent%20subject%20headings%20for%20a%20GND%20identifier%0A%0Adefine%20input%3Ainference%20%22gnd-labels%22%0A%0Aprefix%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%20%0Aprefix%20skoso%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2008%2F05%2Fskos%23%3E%20%0A%0ASELECT%20distinct%20%3FlinkedEntity%20%3Flabel%20%3Fdistance%20%0Awhere%20%0A%7B%20%0A%20%20%20GRAPH%20%3Chttp%3A%2F%2Fulcs.fusepool.info%3A8181%2FDAV%2Fhome%2Ffusepool%2Fldp%2FFU_Berlin_Extraction_Pipeline_Container%2FData%2F201-300.ttl-transformed%3E%20%7B%20%0A%20%20%20%20%20%20%20%3Chttp%3A%2F%2Fd-nb.info%2Fgnd%2F100001718%3E%20%3Chttp%3A%2F%2Fexample.org%2Fx%2FhasCooc%3E%20%3Fc.%0A%20%20%20%20%20%20%20%3Fc%20%3Chttp%3A%2F%2Fexample.org%2Fx%2Furi%3E%20%3FlinkedEntity%20%3B%20%0A%20%20%20%20%20%20%20%3Chttp%3A%2F%2Fexample.org%2Fx%2Fcloseness%3E%20%3Fdistance%20.%0A%20%20%20%20%20%20%20%7D%0A%20%20%20OPTIONAL%20%7B%20GRAPH%20%3Chttp%3A%2F%2Fd-nb.info-gnd%2F%3E%20%7B%20%20%3FlinkedEntity%20skos%3AprefLabel%20%3Flabel%20.%20%7D%7D%0A%20%20%20OPTIONAL%20%7B%20GRAPH%20%3Chttp%3A%2F%2Fd-nb.info-gnd%2F%3E%20%7B%20%20%3FlinkedEntity%20skoso%3AprefLabel%20%3Flabel%20.%20%7D%7D%0A%20%20%20OPTIONAL%20%7B%20GRAPH%20%3Chttp%3A%2F%2Flod.gesis.org%2Fthesoz%2F%3E%20%7B%20%3FlinkedEntity%20skos%3AprefLabel%20%3Flabel%20.%20%7D%20%7D%0A%20%20%20OPTIONAL%20%7B%20GRAPH%20%3Chttp%3A%2F%2Fzbw.eu%2Fstw%2F%3E%20%7B%20%3FlinkedEntity%20skos%3AprefLabel%20%3Flabel%20.%20%7D%20%7D%0A%20%20%20OPTIONAL%20%7B%20GRAPH%20%3Chttp%3A%2F%2Fcv.iptc.org%2Fen%2F%3E%20%7B%20%3FlinkedEntity%20skos%3AprefLabel%20%3Flabel%20.%20%7D%20%7D%0A%20%20%20OPTIONAL%20%7B%20GRAPH%20%3Chttp%3A%2F%2Fcv.iptc.org%2Fde%2F%3E%20%7B%20%3FlinkedEntity%20skos%3AprefLabel%20%3Flabel%20.%20%7D%20%7D%0A%20%20%20OPTIONAL%20%7B%20GRAPH%20%3Chttp%3A%2F%2Fd-nb.info-gnd%2F%3E%20%7B%20%3FlinkedEntity%20skos%3AprefLabel%20%3Flabel%20.%7D%20%7D%0A%7D%0AORDER%20BY%20DESC(%3Fdistance)&should-sponge=&format=text%2Fhtml&timeout=30000000)
+
+	PREFIX fp3: <http://vocab.fusepool.info/fam#> 
+    
+	SELECT distinct ?s ?tag  
+	 WHERE 
+	     { 
+		   GRAPH <http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/FU_Berlin_Extraction_Pipeline_Container/Data/201-300.ttl-transformed> 
+		   {  
+		   ?s fp3:named-entity-reference ?tag . 
+		   }
+		 }
+
+	ORDER BY DESC(?s)
+	

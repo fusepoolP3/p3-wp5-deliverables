@@ -1,0 +1,26 @@
+    #B3Kat-Extraction: generate evaluation > entities linked and their respective labels
+	define input:inference "gnd-labels"
+
+	prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+	prefix skoso: <http://www.w3.org/2008/05/skos#> 
+	PREFIX isbd: <http://iflastandards.info/ns/isbd/elements/>
+	PREFIX dc: <http://purl.org/dc/elements/1.1/>
+	PREFIX fp3: <http://vocab.fusepool.info/fam#> 
+
+	SELECT distinct ?s ?title ?subtitle ?kw ?linkedEntity ?label
+	WHERE 
+	{ 
+ 	 GRAPH <http://ulcs.fusepool.info:8181/DAV/home/fusepool/ldp/Platform_StressTest/B3Kat-Extraction/1-100.ttl-transformed>
+         {
+         ?s  dc:title ?title ; 
+           isbd:P1006 ?subtitle; 
+             dc:subject ?kw .
+         ?s fp3:entity-reference ?linkedEntity . 
+         }
+        OPTIONAL { GRAPH <http://d-nb.info-gnd/> {  ?linkedEntity skos:prefLabel ?label . }}
+   	   	OPTIONAL { GRAPH <http://d-nb.info-gnd/> {  ?linkedEntity skoso:prefLabel ?label . }}
+   		OPTIONAL { GRAPH <http://lod.gesis.org/thesoz/> { ?linkedEntity skos:prefLabel ?label . } }
+   		OPTIONAL { GRAPH <http://zbw.eu/stw/> { ?linkedEntity skos:prefLabel ?label . } }
+        }
+        ORDER BY DESC(?s)
+        LIMIT 2000
