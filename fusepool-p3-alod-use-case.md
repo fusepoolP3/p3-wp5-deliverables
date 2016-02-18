@@ -59,8 +59,7 @@ The transformer was also configured to ignore concatenated texts with less as 50
 For the information extraction from the concatenated texts the 
 [Apache Stanbol Transformer](https://github.com/fusepoolP3/p3-stanbol-enhancer-adapter/tree/master/service) was used. This component allows to use the [Apache Stanbol Enhancer](http://stanbol.apache.org/docs/trunk/components/enhancer/) as Fusepool transformer.
 
-For the Use Case a Stanbol information extraction pipeline (
-[Chain](http://stanbol.apache.org/docs/trunk/components/enhancer/chains/)) with the following extraction components ([Engines](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/)) where used:
+For the Use Case a Stanbol information extraction pipeline ([Chain](http://stanbol.apache.org/docs/trunk/components/enhancer/chains/)) with the following extraction components ([Engines](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/)) where used:
 
 * [Language Detection](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/langdetectengine): The detection of the language is a pre-requirement for every followup NLP processing task
 * OpenNLP based [sentence detection](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/opennlpsentence), 
