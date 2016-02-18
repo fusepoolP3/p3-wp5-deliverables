@@ -62,16 +62,11 @@ For the information extraction from the concatenated texts the
 For the Use Case a Stanbol information extraction pipeline (
 [Chain](http://stanbol.apache.org/docs/trunk/components/enhancer/chains/)) with the following extraction components ([Engines](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/)) where used:
 
-* [Language Detection](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/langdetectengine):
-The detection of the language is a pre-requirement for every followup NLP processing task
+* [Language Detection](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/langdetectengine): The detection of the language is a pre-requirement for every followup NLP processing task
 * OpenNLP based [sentence detection](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/opennlpsentence), 
-[tokenization](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/opennlptokenizer) and 
-[POS tagging](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/opennlppos). All
-pre-requirements for Named Entity Extraction (NER).
-* [OpenNLP based Named Entity Recognition](https://stanbol.apache.org/docs/trunk/components/enhancer/engines/opennlpcustomner) 
-by using the high quality English, German and Italian [IXA Pipe NERC](https://github.com/ixa-ehu/ixa-pipe-nerc/) models.
-* GND Entity Linking and Disambiguation support provided by the [Redlink Semantic Platform](http://redlink.co/semantic-platform/)
-(for details see next section)
+[tokenization](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/opennlptokenizer) and [POS tagging](http://stanbol.apache.org/docs/trunk/components/enhancer/engines/opennlppos). All pre-requirements for Named Entity Extraction (NER).
+* [OpenNLP based Named Entity Recognition](https://stanbol.apache.org/docs/trunk/components/enhancer/engines/opennlpcustomner) by using the high quality English, German and Italian [IXA Pipe NERC](https://github.com/ixa-ehu/ixa-pipe-nerc/) models.
+* GND Entity Linking and Disambiguation support provided by the [Redlink Semantic Platform](http://redlink.co/semantic-platform/) (for details see next section)
 
 ## Redlink GND linking and disambiguation
 
@@ -113,9 +108,14 @@ The engine with the name (`my-redlink-engine`) can than be used as any other sta
 
 _NOTE:_ the `fise2fam` engine is needed by any Enhancement Chain used as Fusepool Transformer, as it translates the Stanbol Enhancement Structure to the [Fusepool Annotation Model](https://github.com/fusepoolP3/overall-architecture/blob/master/wp3/fp-anno-model/fp-anno-model.md) (FAM).
 
+## Batch processing
 
+The 5 million records (available as CSV) were split into junks of 50'000 lines. They were posted to the LDP container by using a custom-made Node.js script. The pipeline then processed the junk and once it was completed, the next junk was posted.
 
-
-
-
+In average there were 10 triples created by line (record) in the CSV. For 50'000 lines of input we in average created 500'000 triples. For the complete use case a bit less than 50 million triples were created. A chunk of 50'000 lines took between 30 and 45 minutes. In total the cumulated processing time was around 60 hours.
  
+## Using Results
+
+The results will be used in a second generation of the [data.alod.ch](http://data.alod.ch/) user interface, which will be released in Q3 2016. For that [Zazuko GmbH](http://www.zazuko.com/) worked with archivists and other archive users on user interface mockups, which are now being implemented.
+
+On large scale level evaluation will be done once the new user interface is in place. Random checks on particular records were very positive, almost all GND interlinks were useful and made sense.
